@@ -1,0 +1,22 @@
+[project]
+name = "simplesquare"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "simplesquare", email = "simplesquare@andrewnw.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+simplesquare = "simplesquare:main"
+
+[tool.maturin]
+module-name = "simplesquare._core"
+python-packages = ["simplesquare"]
+python-source = "src"
+
+[build-system]
+requires = ["maturin>=1.0,<2.0"]
+build-backend = "maturin"
