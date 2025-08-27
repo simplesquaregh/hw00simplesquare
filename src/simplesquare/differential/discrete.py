@@ -21,7 +21,7 @@ def diff(tK: array.array, x: array.array) -> array:
   if len(tK) != len(x):
     raise ValueError("Arrays must be equal in length")
   k = 0
-  vT = array.array
+  vT = array.array("d")
   for arr in tK:
     numerator = x[k] - x[k-1]
     denomenator = arr - tK[k-1]
