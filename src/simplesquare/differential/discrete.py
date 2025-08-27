@@ -1,5 +1,5 @@
 import array
-def diff(tK: array, x: array) -> array:
+def diff(tK: array.array, x: array.array) -> array:
   """
   Compute the velocity function for time series data.
 
@@ -21,7 +21,7 @@ def diff(tK: array, x: array) -> array:
   if len(tK) != len(x):
     raise ValueError("Arrays must be equal in length")
   k = 0
-  vT = []
+  vT = array.array
   for arr in tK:
     numerator = x[k] - x[k-1]
     denomenator = arr - tK[k-1]
